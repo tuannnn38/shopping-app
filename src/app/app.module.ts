@@ -11,6 +11,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import { CockpitComponent } from './cockpit/cockpit.component';
+import { ServerElementComponent } from './server-element/server-element.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { RegistrationFormComponent } from './registration-form/registration-form
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
-    RecipesComponent
+    RecipesComponent,
+    CockpitComponent,
+    ServerElementComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
